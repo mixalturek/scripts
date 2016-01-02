@@ -1,2 +1,4 @@
-# scripts
-Small useful scripts to not lose them
+Small Scripts
+=============
+
+Small useful scripts to not lose them.
