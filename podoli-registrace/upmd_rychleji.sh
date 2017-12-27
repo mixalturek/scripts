@@ -1,7 +1,11 @@
 #!/bin/bash -ex
 
 # Script to auto-fill the registration form at https://www.upmd.cz/registrace/.
-# Put cursor inside "Termín porodu" box and execute the script.
+#
+# - apt-get install xdotool
+# - Put cursor inside "Termín porodu" box and execute the script.
+# - Update configuration in the constants at the top.
+# - Optionally tune code for Pojišťovna if not VZP.
 
 TERMIN_PORODU='1970-01-01'
 CISLO_POJISTENCE_RC='0000000000'
