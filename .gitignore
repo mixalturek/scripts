@@ -1,1 +1,4 @@
 .idea
+podoli-registrace/upmd_rychleji_withdata.sh
+webcheck/webcheck_run*.sh
+!webcheck/webcheck_run_example.sh
