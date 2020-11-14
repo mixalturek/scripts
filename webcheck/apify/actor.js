@@ -20,18 +20,20 @@ Apify.main(async () => {
         url: input.url,
         subResults,
         result,
+        src: 'https://github.com/mixalturek/small-scripts/tree/master/webcheck',
     };
 
     console.log('My output:');
     console.dir(output);
     await Apify.setValue('OUTPUT', output);
 
-    if (!result) {
+    if (result) {
         // https://github.com/apify/actor-send-mail
-        console.log('Notifying about failure by email...')
+        console.log('Notifying about finding by email...')
         await Apify.call('apify/send-mail', {
-            to: '...',
-            subject: '...',
+            to: input.email.to,
+            cc: input.email.cc,
+            subject: input.email.subject,
             text: JSON.stringify(output, null, 4),
         });
     }

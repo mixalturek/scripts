@@ -3,5 +3,10 @@
   "tokens": [
     "PEPA ZDEPA",
     "TOMAS MARNY"
-  ]
+  ],
+  "email": {
+    "to": "...",
+    "cc": "...",
+    "subject": "..."
+  }
 }
